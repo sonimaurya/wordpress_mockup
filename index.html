@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="wrapper">
@@ -12,6 +14,24 @@
 				<img src="images/home/services.png">
 			</div>
 			<div class="header-nav-menu">
+				<div class="mobile-menu" >
+					<i class="fa fa-bars " onclick="display_menu()"></i>
+					<ul id="mobile-menu">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">Services & Products</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				
 				<ul class="header-nav-menu-ul">
 					<li class="header-nav-menu-ul-li">
 						<a href="#" class="header-nav-menu-ul-li-a">Home</a>
@@ -96,7 +116,7 @@
 					</div>
 					<div class="services-about-us-box-card">
 						<div class="services-about-us-box-card-text">
-							<div class="big-text">
+							<div class="big-text know-text">
                                  KNOW MORE
 							</div>
 							<div class="small-text">

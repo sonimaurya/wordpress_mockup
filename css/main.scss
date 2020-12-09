@@ -16,6 +16,9 @@
         background-image: url(../images/home/banner.jpg);
         background-size: 100% 100%;
         &-nav{
+            .mobile-menu{
+                display: none;
+            }
             @include layout($direction:row,$justify:space-between,$margin:2px 50px 0 50px); 
             &-logo{
                 @include layout($direction:row,$justify:flex-start); 
@@ -297,6 +300,7 @@
                 padding:0 40px 0 40px;
                 border-left: 1px solid $primary-text-color;
                 border-right: 1px solid $primary-text-color;
+                white-space: nowrap;
             }
         }
         &-copyright-text{
@@ -315,3 +319,8 @@
     border-left: 1px solid $about-us-border-color;
    border-right: 1px solid $about-us-border-color;
  }
+
+ .know-text{
+    color:$text-button-color !important;
+}
+ @import '__media.scss';
