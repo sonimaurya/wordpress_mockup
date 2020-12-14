@@ -748,6 +748,9 @@
         background-size:100% 100%;
         height: auto;
         padding:0 0 10% 0;
+        .header-side-nav{
+            display: none;
+        }
         &-text{
             padding:2%;
             &-big-title{
@@ -918,6 +921,9 @@
                   }
                   
                   &-r{
+                      img{
+                          width: 100%;
+                      }
                     width:70%;
                     &-heading{
                         @include text-property($text-transform:capitalize,
@@ -925,6 +931,7 @@
                         $color:$top-heading-color);
                         text-align: center;
                         padding: 2%;
+                        max-width: 100%;
                     }
                 }
               }

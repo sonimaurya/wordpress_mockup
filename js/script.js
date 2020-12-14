@@ -1,11 +1,15 @@
 
   function display_menu() {
-    var x = document.getElementById("mobile-menu");
-    if (x.style.display === "block") {
-      x.style.display="none";
-    } else {
-    x.style.display = "block";
-    }
+    $("#mobile-menu").toggle(function(){
+      $('.mobile-menu>i').toggleClass("fa-times  fa-bars");
+    });
+  }
+  function display_sidebar() {
+
+    $(".services1-content-sidebar").toggle(function(){
+      $('.header-side-nav>i').toggleClass("fa-times fa-ellipsis-h");
+    });
+
   }
   $(window).scroll(function() {
     var height = $(window).scrollTop();
