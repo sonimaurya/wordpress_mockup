@@ -1765,6 +1765,9 @@
   .wrapper .services {
     height: 100%;
   }
+  .wrapper .services .header {
+    background-image: url(../images/services/services_bg.jpg);
+  }
   .wrapper .services-about-us {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1849,6 +1852,10 @@
   }
   .fa-bars {
     color: #ffffff;
+  }
+  .contact-us .header {
+    background-image: url(../images/contact-us/contactus_bg.jpg);
+    background-size: auto;
   }
   .contact-us .middle-content {
     display: -webkit-box;
@@ -1984,6 +1991,10 @@
   .about-us .solution-overview-chart-box-parent .solution-overview-chart-box-info-box .solution-overview-info-box-body {
     width: 100%;
   }
+  .services1 .header {
+    background-image: url(../images/services/services_bg.jpg);
+    background-size: auto;
+  }
   .services1-content {
     position: relative;
     -webkit-box-orient: vertical;
@@ -2070,9 +2081,6 @@
   }
   .contact-us .project-with-us-para .number-button .project-with-us-button {
     width: 30%;
-  }
-  .about-us .header {
-    background-image: url(../images/about-us/aboutus_bg.jpg);
   }
   .about-us .team {
     display: -webkit-box;

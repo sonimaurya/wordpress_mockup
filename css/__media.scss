@@ -40,6 +40,10 @@
         }
     }
     .services{
+        .header{
+            background-image:url(../images/services/services_bg.jpg);
+        }
+       
         height: 100%;
         &-about-us{
             flex-direction: column;
@@ -121,6 +125,10 @@
 color: $secondary-text-color;
 }
 .contact-us{
+    .header{
+        background-image: url(../images/contact-us/contactus_bg.jpg);
+        background-size: auto;
+    }
     .middle-content{
         @include layout($direction:column);
         &-contact-us{
@@ -231,6 +239,10 @@ color: $secondary-text-color;
     }
 }
 .services1{
+    .header{
+        background-image:url(../images/services/services_bg.jpg);
+        background-size: auto;
+    }
     &-content{
         position: relative;
         flex-direction:column;
@@ -338,9 +350,7 @@ color: $secondary-text-color;
     }
 }
 .about-us{
-    .header{
-        background-image: url(../images/about-us/aboutus_bg.jpg);
-    }
+    
     .team{
         @include layout($direction:column);
         background-size:auto;
