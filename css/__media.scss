@@ -120,7 +120,145 @@
 .fa-bars {
 color: $secondary-text-color;
 }
-
+.contact-us{
+    .middle-content{
+        @include layout($direction:column);
+        &-contact-us{
+            width:100%;
+        }
+        &-contact-us-form{
+            width:100%;
+            &-title{
+                padding:10px 0;
+            }
+            &-fileds{
+                padding:0;
+            }
+                .form-btn{
+                    .form-btn-submit{
+                        width:50%;
+                    }
+                }          
+        }
+       
+    }
+  
+    .project-with-us{
+        &-para{
+            @include layout($direction:column);
+            .para-text{
+                width: 100%;
+            }
+            .number-button{
+                width: 100%;
+                justify-content: center;
+                .project-with-us-button{
+                    width: 50%;
+                }
+            }
+        }
+        .scroll-btn{
+            top: 90%;
+        }
+    }
+}
+.about-us{
+    .header{
+        background-image:url(../images/about-us/aboutus_bg_mobile.jpg);
+    }
+    .team{
+        @include layout($direction:column);
+        background-size:auto;
+        &-text{
+            width:100%;
+        }
+        &-images{
+            width:100%;
+            @include layout($direction:column,$padding:10% 0 0 0);
+            &-body{
+                text-align: center;
+            } 
+        }
+    }
+    .mission-statements{
+        &-para{
+           flex-direction:column;
+            &-cards{
+                width:100%;
+                padding:4%;
+            }
+        }
+    }
+    .background{
+        background-size:auto;
+        &-cards{
+            flex-direction:column; 
+            &-body{
+                padding:4% 0;
+            }
+        }
+        &-button{
+            padding: 3%;
+            &-btn{
+                width: 50%;
+            }
+        }
+    }
+    .solution-overview{
+        padding: 6% 0;
+        &-chart-box{
+            height:709px;
+            &-parent{
+                position: unset;
+                .solution-overview-chart-box-line{
+               display: none;
+            }
+            
+            .solution-overview-chart-box-info-box{
+                position: unset;
+                top:unset;
+                width:100%;
+                margin-left:0;
+                @include layout($direction:column);
+                .solution-overview-info-box-body{
+                    width:100%;
+                   
+                   
+                }
+            }
+        }
+        }
+    }
+}
+.services1{
+    &-content{
+        position: relative;
+        flex-direction:column;
+        &-sidebar{
+            position: absolute;
+            z-index:1;
+            width:100%;
+            display: none;
+        }
+        &-page{
+            &-wrapper{
+                .wrapper-pavement-management{
+                    @include layout($direction:column);
+                    &-l{
+                        width:100%;
+                        flex-wrap: wrap;
+                    }
+                    &-r{
+                        width:100%;
+                        img{
+                            max-width: 100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }
 
 @media screen and (min-width:540px) and (max-width:540px){
@@ -128,6 +266,21 @@ color: $secondary-text-color;
         .services-products-box-r{
             .slideshow-dot-box{
                 margin-top: 51px;
+            }
+        }
+    }
+    .about-us{
+        .solution-overview{
+            &-chart-box{
+                height:864px;
+    
+            }
+        }
+        .team{
+            @include layout($direction:column);
+           
+            &-images{
+                @include layout($direction:row);
             }
         }
     }
@@ -147,5 +300,87 @@ color: $secondary-text-color;
         width: 100%;
     }
     }
+    .about-us{
+        .solution-overview{
+            &-chart-box{
+                height:823px;
+    
+            }
+        }
+        .background{
+           &-scroll-button{
+               top:97%;
+           }
+        }
 
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:768px){
+.contact-us{
+    .middle-content{
+        &-contact-us-form{
+            .form-btn{
+                .form-btn-submit{
+                    width:30%;
+                }
+            } 
+        }
+    }
+    .project-with-us{
+        &-para{
+            .number-button{
+                .project-with-us-button{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+.about-us{
+    .header{
+        background-image: url(../images/about-us/aboutus_bg.jpg);
+    }
+    .team{
+        @include layout($direction:column);
+        background-size:auto;
+       
+        &-images{
+            @include layout($direction:row);
+            &-body{
+                text-align: center;
+            } 
+        }
+    }
+    .solution-overview{
+        &-chart-box{
+            height:969px;
+
+        }
+    }
+    .background{
+        &-button{
+            &-btn{
+              width:27%;
+            }
+        }
+    }
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1024px){
+.about-us{
+    .team{
+        &-text{
+            padding:2%;
+        }
+    }
+    .background{
+        &-cards{
+            &-body{
+                padding:2% 3%;
+            }
+        }
+    }
+}
 }
