@@ -348,6 +348,50 @@ color: $secondary-text-color;
         }
     }
 }
+
+.services2{
+    overflow: hidden;
+    .services1-content{
+        &-page{
+            &-wrapper{
+                .wrapper-images{
+                    @include layout($direction:column,
+                    $padding:0,$margin:0);
+                    .responsive-img{
+                        padding:0;
+                        width:unset;
+                        .img-text{
+                            padding:0;
+                        }
+                        img{
+                            width: 90%;
+                            margin-left:5%;
+                        }
+                    }
+                    .middle-img{
+                        margin: 5% 36%;
+                        img{
+                            transform: rotate(90deg);
+                        
+                    }
+                    }
+                }
+                .wrapper-box{
+                    @include layout($direction:column,$justify:space-between,
+                    $margin:2%,$padding:5%);
+                    &-image{
+                        text-align: center;
+                    }
+                    
+                        &-text{
+                         width:100%;
+                         text-align: center; 
+                        }
+                }
+            }
+        }
+    }
+}
 }
 
 @media screen and (min-width:540px) and (max-width:540px){
@@ -370,6 +414,34 @@ color: $secondary-text-color;
            
             &-images{
                 @include layout($direction:row);
+            }
+        }
+    }
+    .services2{
+        overflow: hidden;
+        .services1-content{
+            &-page{
+                &-wrapper{                   
+                .wrapper-images{
+                    .middle-img{
+                             margin:12% 36%;
+                           
+                      }
+                   
+                 }
+                 .wrapper-box{
+                   &-image{
+                       width:100%;
+                       text-align: center;
+                   }
+                   
+                       &-text{
+                        width:100%;
+                        text-align: center; 
+                       }
+                   
+                 }
+                }
             }
         }
     }
@@ -434,6 +506,34 @@ color: $secondary-text-color;
            
         }
     }
+    .services2{
+        overflow: hidden;
+        .services1-content{
+            &-page{
+                &-wrapper{
+                 .wrapper-box{
+                     margin: 0;
+                     padding: 0;
+                 }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:320px) and (max-width:320px){
+.services2{
+    overflow: hidden;
+    .services1-content{
+        &-page{
+            &-wrapper{
+             .wrapper-box{
+                 margin: 0;
+                 padding: 0;
+             }
+            }
+        }
+    }
+}
 }
 
 
@@ -486,6 +586,28 @@ color: $secondary-text-color;
         }
     }
 }
+.services2{
+    overflow: hidden;
+    .services1-content{
+        &-page{
+            &-wrapper{
+             .wrapper-images{
+                 .middle-img{
+                    margin: 5% 42%;
+                 }
+             }
+             .wrapper-box{
+                 &-text,&-image{
+                     width: 100%;
+                 }
+                margin: 4% 9%;
+                padding: 1% 5%;
+                text-align:center;
+             }
+            }
+        }
+    }
+}
 }
 
 @media screen and (min-width:1024px) and (max-width:1024px){
@@ -499,6 +621,34 @@ color: $secondary-text-color;
         &-cards{
             &-body{
                 padding:2% 3%;
+            }
+        }
+    }
+}
+.services2{
+    overflow: hidden;
+    .services1-content{
+        &-page{
+            &-wrapper{
+               
+            .wrapper-images{
+                flex-direction: column;
+                text-align: center;
+                .responsive-img{
+                    width:100%;
+                }
+                .middle-img{
+                         margin:0;
+                        img{
+                            transform: rotate(90deg);
+                        }
+                  }
+               
+             }
+             .wrapper-box{
+                margin: 4% 4%;
+                padding: 1% 9%;
+             }
             }
         }
     }
