@@ -785,9 +785,28 @@
                          padding: 9% 0 0 0;
                          
                         }
-
+                         
+                    }
+                   
+                    ul{
+                        li{
+                            border:none;
+                            a{
+                                .subheading{
+                                    @include text-property($text-transform:capitalize
+                                    ,$size:20px,$font:Barlow-regular,
+                                    $color:$top-heading-color);
+                                     padding: 9% 0 0 0;
+                                     color:$top-heading-color !important;
+                                    }
+                                    
+                            }
+                        }
                     }
                     
+                }
+                #having-subheading{
+                    display: none;
                 }
                
             }
@@ -997,7 +1016,7 @@
     }
     .active-sidebar{
         background-color: $text-button-color;
-        
+        border:none;
         border-top-right-radius: 30px;
         a{
             .subheading{
