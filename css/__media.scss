@@ -392,6 +392,109 @@ color: $secondary-text-color;
         }
     }
 }
+.services3{
+    .services1-content{
+        &-page{
+            .services3-content{
+                &-features{
+                    padding: 15% 7% 10% 7%;
+                    &-box{
+                        padding:2% 7%;
+                        &-t{
+                            margin:-9% 4% 0 4%;
+                            width:50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.services4{
+    .services1-content{
+        &-page{
+            .services4-content{
+          
+            &-images{
+            flex-direction: column;
+            .services4-image{
+              width:100%;
+            }
+           
+            }
+            &-features{
+                &-box{
+                    padding: 2% 6%;
+                    &-t{
+                        margin: -6% 4% 0 4%;
+                        width: 50%;
+                    
+                    }
+                   }
+            }
+            }
+        }
+    }
+}
+.services5{
+    .services1-content{
+        &-page{
+            .services5-content{
+          
+            &-images{
+                padding:0 5%;
+            flex-direction: column;
+            .services5-image{
+              width:100%;
+            }
+             img{
+                 width:100%;
+             }
+            }
+            &-features{
+                &-box{
+                    padding: 2% 6%;
+                    &-t{
+                        margin: -6% 4% 0 4%;
+                        width: 50%;
+                    
+                    }
+                   }
+            }
+            }
+        }
+    }
+}
+.services6{
+    .services1-content{
+        &-page{
+            .services6-content{
+          
+            &-images{
+                padding:0 5%;
+            flex-direction: column;
+            .services6-image{
+              width:100%;
+            }
+             img{
+                 width:100%;
+             }
+            }
+            &-features{
+                &-box{
+                    padding: 2% 6%;
+                    &-t{
+                        margin: -6% 4% 0 4%;
+                        width: 50%;
+                    
+                    }
+                   }
+            }
+            }
+        }
+    }
+}
+
 }
 
 @media screen and (min-width:540px) and (max-width:540px){
@@ -445,6 +548,7 @@ color: $secondary-text-color;
             }
         }
     }
+
 }
 
 
