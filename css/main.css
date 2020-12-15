@@ -217,6 +217,31 @@
   margin: 20px auto;
 }
 
+.wrapper .services-about-us-para {
+  text-align: center;
+  padding: 1% 5%;
+}
+
+.wrapper .services-about-us-para-text {
+  font-size: 20px;
+  color: #474747;
+  font-family: Barlow-medium-bold;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+  padding-bottom: 2%;
+}
+
+.wrapper .services-about-us-para-know {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #e27f21;
+  font-family: Barlow-bold;
+  text-decoration: none;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
 .wrapper .services-about-us-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,6 +494,92 @@
   border: 2px solid #ffffff;
 }
 
+.wrapper .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 3% 3% 3%;
+}
+
+.wrapper .news-title {
+  text-align: center;
+  padding: 2%;
+}
+
+.wrapper .news-title .top-heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #474747;
+  font-family: Barlow-semi-bold;
+}
+
+.wrapper .news-title .horizontal-line {
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #e27f21;
+  margin: 20px auto;
+}
+
+.wrapper .news-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+.wrapper .news-description-cards {
+  width: 50%;
+  padding: 6% 11%;
+  text-align: center;
+}
+
+.wrapper .news-description-cards:hover {
+  background-color: #fcf2e8;
+  cursor: pointer;
+}
+
+.wrapper .news-description-cards-t {
+  text-transform: none;
+  font-size: 35px;
+  color: #aaaaaa;
+  font-family: Barlow-semi-bold;
+  padding-bottom: 3%;
+}
+
+.wrapper .news-description-cards-d {
+  text-transform: none;
+  font-size: 20px;
+  color: #6b6b6b;
+  font-family: Barlow-medium-bold;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.wrapper .news > .news-description:nth-last-child(2) .news-description-cards:first-child {
+  border-right: 2px solid #dbdbdb;
+}
+
+.wrapper .news > .news-description:last-child .news-description-cards:first-child {
+  border-right: 2px solid #dbdbdb;
+  border-top: 2px solid #dbdbdb;
+}
+
+.wrapper .news > .news-description:last-child .news-description-cards:last-child {
+  border-top: 2px solid #dbdbdb;
+}
+
 .wrapper .getintouch {
   background-image: url(../images/home/getintouch.jpg);
   background-size: 100% 100%;
@@ -496,8 +607,8 @@
 
 .wrapper .getintouch-para {
   text-align: center;
-  width: 40%;
-  margin: 0 30% 0 30%;
+  width: 60%;
+  margin: 0 20% 0 20%;
 }
 
 .wrapper .getintouch-para-text {
@@ -549,9 +660,9 @@
 
 .wrapper .getintouch-para-text-button {
   margin: 40px;
-  background: transparent;
+  background: #e27f21;
   font-family: Barlow-bold;
-  width: 40%;
+  width: 25%;
   color: #ffffff;
   outline: none;
   border: none;
@@ -561,7 +672,6 @@
   height: 58px;
   font-size: 20px;
   border-radius: 30px;
-  border: 2px solid #ffffff;
 }
 
 .wrapper .footer {
@@ -2402,6 +2512,31 @@
   }
   .wrapper .header-nav-menu-ul {
     display: none;
+  }
+  .wrapper .news-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2%;
+  }
+  .wrapper .news-description-cards {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .wrapper .news > .news-description:nth-last-child(2) .news-description-cards:first-child {
+    border-right: none;
+  }
+  .wrapper .news > .news-description:last-child .news-description-cards:first-child {
+    border-right: none;
+    border-top: none;
+  }
+  .wrapper .news > .news-description:last-child .news-description-cards:last-child {
+    border-top: none;
   }
   .wrapper .services {
     height: 100%;

@@ -51,6 +51,32 @@
             }
         }
     }
+    .news{
+        &-description{
+            @include layout($direction:column,$padding:0 2%);
+            &-cards{
+                width: 100%;
+                border:none;
+                border-bottom:1px solid $about-us-border-color;
+            }
+        }
+    }
+    .news>.news-description:nth-last-child(2){
+        .news-description-cards:first-child{
+            border-right:none;  
+        }
+      }
+        .news>.news-description:last-child{
+      .news-description-cards:first-child{
+          border-right:none;
+          border-top:none;
+      }
+      .news-description-cards:last-child{
+        border-top:none;
+       
+    }
+        }
+      
     .services{
         .header{
             background-image:url(../images/services/services_bg.jpg);

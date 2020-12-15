@@ -91,6 +91,26 @@
                    @include headingLine;
                 }
             }
+            &-para{
+                text-align: center;
+                padding:1% 5%;
+                &-text{
+                font-size: 20px;
+                color: $top-heading-color;
+                font-family: Barlow-medium-bold;  
+                text-align: center;
+                line-height:2;
+                letter-spacing: 1px;
+                padding-bottom: 2%;
+                }
+                &-know{
+                    @include text-property($size:20px,$font:Barlow-bold,
+                    $color:$text-button-color);
+                    text-decoration: none;
+                    line-height:2;
+                letter-spacing: 1px;
+                }
+            }
             &-box{
                 @include aboutUsCard;
             }
@@ -225,7 +245,62 @@
             }
         }
     }
+    .news{
+        @include layout($direction:column,$padding:0 3% 3% 3%);
+        &-title{
+            text-align: center;
+            padding:2%;
+            .top-heading{
+                @include text-property($size:40px,$color:$top-heading-color
+                ,$font:Barlow-semi-bold);
 
+            }
+            .horizontal-line{
+               @include headingLine;
+            }
+        }
+        &-description{
+            @include layout($direction:row,$justify:space-between,$padding:0 10%);
+            &-cards{
+                &:hover{
+                    background-color:#fcf2e8;
+                    cursor: pointer;
+                }
+                //@include layout($direction:column,$justify:space-between);
+                width: 50%;
+                padding: 6% 11%;
+                text-align:center;
+                &-t{
+                    @include text-property($size:35px,$font:Barlow-semi-bold,
+                    $color:#aaaaaa,$text-transform:none);
+                    padding-bottom: 3%;
+                }
+                &-d{
+                    @include text-property($size:20px,$font:Barlow-medium-bold
+                    ,$color:#6b6b6b,$text-transform:none);
+                    letter-spacing: 1px;
+                    line-height: 32px;
+                }
+            }
+        }
+       
+    }
+  .news>.news-description:nth-last-child(2){
+    .news-description-cards:first-child{
+        border-right:2px solid $about-us-border-color;  
+    }
+  }
+    .news>.news-description:last-child{
+  .news-description-cards:first-child{
+      border-right:2px solid $about-us-border-color;
+      border-top:2px solid $about-us-border-color;
+  }
+  .news-description-cards:last-child{
+    border-top:2px solid $about-us-border-color;
+   
+}
+    }
+  
     .getintouch{
         background-image: url(../images/home/getintouch.jpg);
         background-size: 100% 100%;
@@ -249,8 +324,8 @@
             $font:Barlow-regular);
             line-height: 2;
                       }
-            width: 40%;
-            margin:0 30% 0 30%;
+            width: 60%;
+            margin:0 20% 0 20%;
             &-contact-us{
                 @include layout($direction:row,$justify:space-between);
                 .getintouch-para-address{
@@ -281,8 +356,8 @@
             }
             &-text-button{
                 margin:40px;
-             @include textButton($background:transparent,$width:40%);
-             border:2px solid $secondary-text-color;
+             @include textButton($width:25%);
+            //  border:2px solid $secondary-text-color;
             }
         }
     }
