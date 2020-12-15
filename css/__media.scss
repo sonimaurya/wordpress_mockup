@@ -51,6 +51,7 @@
     .services{
         .header{
             background-image:url(../images/services/services_bg.jpg);
+        
         }
        
         height: 100%;
@@ -251,6 +252,12 @@ color: $secondary-text-color;
     .header{
         background-image:url(../images/services/services_bg.jpg);
         background-size: auto;
+        &-text{
+            &-big-title{
+                width:100%;
+                margin:0;
+            }
+        }
         &-nav{
             margin:2px 20px 0 20px;
             .header-side-nav{
