@@ -581,6 +581,7 @@
 }
 
 .wrapper .getintouch {
+  position: relative;
   background-image: url(../images/home/getintouch.jpg);
   background-size: 100% 100%;
 }
@@ -672,6 +673,13 @@
   height: 58px;
   font-size: 20px;
   border-radius: 30px;
+}
+
+.wrapper .home-scroll-button {
+  position: absolute;
+  top: 89%;
+  right: 4%;
+  cursor: pointer;
 }
 
 .wrapper .footer {
@@ -1870,6 +1878,17 @@
   color: #ffffff;
 }
 
+.services1 .footer {
+  position: relative;
+}
+
+.services1 .footer .services1-scroll-button {
+  position: absolute;
+  top: -19%;
+  right: 4%;
+  cursor: pointer;
+}
+
 .services2 .header {
   padding: 0 0 5% 0;
   display: -webkit-box;
@@ -2619,6 +2638,9 @@
   }
   .wrapper .getintouch-para-text-button {
     width: 50%;
+  }
+  .wrapper .home-scroll-button {
+    top: 93%;
   }
   .wrapper .header-text-button {
     width: 50%;

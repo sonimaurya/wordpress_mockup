@@ -302,6 +302,7 @@
     }
   
     .getintouch{
+        position: relative;
         background-image: url(../images/home/getintouch.jpg);
         background-size: 100% 100%;
         &-heading{
@@ -361,7 +362,12 @@
             }
         }
     }
-
+.home-scroll-button{
+        position: absolute;
+        top: 89%;
+        right: 4%;
+        cursor: pointer;
+}
     .footer{
         padding:40px;
         font-family: Barlow-semi-bold;
@@ -1106,6 +1112,15 @@
                 font-family: barlow-regular;
                 color:$secondary-text-color;
             }
+        }
+    }
+    .footer{
+        position: relative;
+        .services1-scroll-button{
+        position: absolute;
+        top: -19%;
+        right: 4%;
+        cursor: pointer;
         }
     }
 }
