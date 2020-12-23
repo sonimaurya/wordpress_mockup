@@ -1,0 +1,157 @@
+.services{
+    background-image: url(../images/home/services_bg.jpg);
+    background-size: 100% 100%;
+    //min-height: 938px;
+    position: relative;
+   // padding:5% ;
+    &-about-us{
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:1%;
+        padding-bottom:1%;
+        //@include layout($padding:25px 30px,$justify:center,$direction:column);
+        background-color: $services-background-color;
+        width: 75%;
+         top:-9%;
+        left: 12.5%;
+        position: absolute;
+        &-top{
+            text-align: center;
+            .top-heading{
+                @include text-property($size:40px,$color:$top-heading-color
+                ,$font:Barlow-semi-bold);
+            }
+            .horizontal-line{
+               @include headingLine;
+            }
+        }
+        &-para{
+            text-align: center;
+            padding:1% 5% ;
+            &-text{
+            font-size: 20px;
+            color: $top-heading-color;
+            font-family: Barlow-medium-bold;  
+            text-align: center;
+            line-height:2;
+            letter-spacing: 1px;
+            padding-bottom: 2%;
+            }
+            &-know{
+            @include text-property($size:20px,$font:Barlow-bold,
+            $color:$text-button-color);
+            text-decoration: none;
+            line-height:2;
+            letter-spacing: 1px;
+            }
+        }
+        &-box{
+            display: flex;
+            justify-content: space-between;
+            @import '__aboutus_card.scss';
+        }
+        
+    }
+    &-products{
+        margin-top:25%;
+        padding-left:2%;
+        padding-right:2%;
+        &-heading{
+            text-align: center;
+           
+                .top-heading{
+                    @include text-property($size:40px,$color:$secondary-text-color
+                    ,$font:Barlow-semi-bold);
+                }
+                .horizontal-line{
+                   @include headingLine;
+                }
+              
+        }
+        &-box{
+            display: flex;
+            justify-content:space-between;
+            padding:10px;
+        //@include layout($direction:row,$justify:space-between,$padding:10px);
+        &-l{
+           width: 50%; 
+           .para{
+            line-height: 2;
+            text-align: left;
+            //padding-left:63px;
+            &-button{
+                @include textButton($width:36%,$height:58px);
+                margin-top:46px;
+            }
+         .para-text{
+             @include text-property($text-transform:unset,$font:Barlow-regular,$size:24px);
+         }
+        }              
+        }
+        &-r{
+            width: 50%;
+            .services-products-slideshow{
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+                &-slides{
+                    padding: 0px 50px;
+                    display: block;
+                    .slideshow-slides-shadow{
+                        width:85%;
+                        height: 248px;
+                        background: linear-gradient(45deg, #908d8d0a, #80787854, #bfbaba26);
+                        border-radius: 15px;
+                        //padding:0 30px;
+                        margin-left: -28px;
+                        position: absolute;
+                        margin-top:30px;
+                    }
+                    .slideshow-img{
+                        position: relative;
+                        width: 90%;
+                        height: 300px;
+                        border-radius: 15px;
+                        }
+                }
+                .fade{
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+                @-webkit-keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                  }
+                  
+                  @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                  }
+            }
+            .slideshow-dot-box{
+                text-align: center;
+                margin-top: 30px;
+                .dot{
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color:$top-heading-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                    &:hover{
+                        @include slideshoe_dot;
+                    }
+                }
+                .active{
+                    @include slideshoe_dot;
+                }
+            }
+        }
+        }
+    }
+
+}

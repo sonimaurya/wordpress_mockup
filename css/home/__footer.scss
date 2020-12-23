@@ -1,0 +1,23 @@
+.footer{
+    padding:40px;
+    font-family: Barlow-semi-bold;
+    flex-direction:column;
+    justify-content:center;
+    display: flex;
+    &-logo{
+        object-fit: contain;
+    }
+    &-privacy-text{
+        text-align: center;
+        padding:30px;
+        span{
+            padding:0 40px 0 40px;
+            border-left: 1px solid $primary-text-color;
+            border-right: 1px solid $primary-text-color;
+            white-space: nowrap;
+        }
+    }
+    &-copyright-text{
+        text-align: center;
+    }
+}
